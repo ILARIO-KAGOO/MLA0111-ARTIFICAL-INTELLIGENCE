@@ -1,6 +1,5 @@
 # Taking number of queens as input from user
-print ("Enter the number of queens")
-N = int(input())
+N = int(input("Enter the number of queens: "))
 
 # here we create a chessboard
 # NxN matrix with all elements set to 0
