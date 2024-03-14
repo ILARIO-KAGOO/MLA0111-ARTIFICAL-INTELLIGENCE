@@ -1,17 +1,16 @@
-print("Bindhu")
 class VacuumCleaner:
     def __init__(self):
         self.position = 0  # Position of the vacuum cleaner (0: Left, 1: Right)
-        self.environment = [0, 0]  # Environment with dirty cells (0: Clean, 1: Dirty)
+        self.environment = [1, 1,0,0,1]  # Environment with dirty cells (0: Clean, 1: Dirty)
 
     def sense(self):
         return self.environment[self.position]
 
     def move(self):
-        if self.position == 0:
-            self.position = 1
-        else:
-            self.position = 0
+        # if self.position == 0:
+        self.position += 1
+        # else:
+        #     self.position = 0
 
     def clean(self):
         self.environment[self.position] = 0
